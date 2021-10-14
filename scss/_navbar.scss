@@ -1,0 +1,91 @@
+@import 'variable.scss';
+@import 'font.scss';
+@import 'mixin.scss';
+
+
+.navbar{
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                @include ralemed;
+                font-size: 16px;
+                color: $cl1;
+                padding-right: 20px !important;
+                transition: all linear 0.4s;
+                -webkit-transition: all linear 0.4s;
+                -moz-transition: all linear 0.4s;
+                -ms-transition: all linear 0.4s;
+                -o-transition: all linear 0.4s;
+                position: relative;
+                line-height: 110px;
+                display: inline !important;
+
+
+                &::before{
+                    content: '';
+                    width: 23px;
+                    height: 1px;
+                    background: $brand;
+                    position: absolute;
+                    left: 0;
+                    bottom: -10px;
+                    opacity: 0;
+                    transition: all linear 0.4s;
+                    -webkit-transition: all linear 0.4s;
+                    -moz-transition: all linear 0.4s;
+                    -ms-transition: all linear 0.4s;
+                    -o-transition: all linear 0.4s;
+                }
+
+                &::after{
+                    content: '';
+                    width: 11px;
+                    height: 1px;
+                    background: $brand;
+                    position: absolute;
+                    left: 0;
+                    bottom: -13px;
+                    opacity: 0;
+                    transition: all linear 0.4s;
+                    -webkit-transition: all linear 0.4s;
+                    -moz-transition: all linear 0.4s;
+                    -ms-transition: all linear 0.4s;
+                    -o-transition: all linear 0.4s;
+                }
+
+                &:hover{
+                    color: $brand;
+                    &::before{
+                        opacity: 1;
+                    }
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &:last-child{
+                .nav-link{
+                    padding-right: 0 !important;
+                }
+            }
+        }
+    }
+
+    .nav-right{
+        .nav-search{
+            color: $cl1;
+        }
+
+        .nav-cart-icon{
+            @include ralemed;
+            font-size: 16px;
+            color: $brand;
+        }
+    }
+}
+
+
+/* ====================
+    navbar css ends
+==================== */ 

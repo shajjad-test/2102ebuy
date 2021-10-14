@@ -1,0 +1,31 @@
+@import 'variable.scss';
+@import 'font.scss';
+
+/* =======================
+    common css starts
+======================== */ 
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    vertical-align: middle;
+}
+
+/* =======================
+    common css ends
+======================== */ 
+
+@import 'header.scss';
+@import 'navbar.scss';
+@import 'banner.scss';
+@import 'footer.scss';

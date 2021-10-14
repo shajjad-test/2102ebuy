@@ -1,0 +1,46 @@
+@import 'variable.scss';
+@import 'font.scss';
+
+@mixin over60 {
+    background: rgba(0,0,0,0.6);
+}
+
+@mixin over70 {
+    background: rgba(0,0,0,0.7);
+}
+
+@mixin over80 {
+    background: rgba(0,0,0,0.8);
+}
+
+@mixin  detail {
+    @include openreg;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+@mixin  ctabtn {
+    line-height: 52px;
+    border: 1px solid #fff;
+    @include ralereg;
+}
+
+@mixin ctahover {
+    background: $brand;
+    border-color: $brand;
+}
+
+@mixin  socialicon {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    color: $cl1;
+    font-size: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
